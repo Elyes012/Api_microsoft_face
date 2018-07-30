@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>Document</title>
+
+    <style>
+    .cam
+{
+    display: flex;
+}
+
+button
+{
+    position: relative;
+  background: #7983ff;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+
+ 
+    </style>
+</head>
+<body>
+
+      
+        <button onclick="live()">AnalyseFace</button>
+    <div class="cam">
+
+    
+        <div><video id="vid"></video></div> 
+      <div><canvas id="canvas"></canvas></div>   
+      
+     </div>
+     
+     <div>  <textarea rows="30" cols="60" id="log" ></textarea></div>
+</body>
+</html>
